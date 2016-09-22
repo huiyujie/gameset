@@ -1,0 +1,118 @@
+
+**
+
+**Set Game**
+========
+
+**
+
+
+
+**Description**
+-------------
+
+This is a implementation of Set the card game using Ruby.
+In Set a deck of 81 cards is used that vary with four features (number, color, symbol and shading)
+A set in this game occurs when three cards satisfy all these conditions:
+All three cards have the same number or they all have different numbers
+All three cards have the same symbol or they all have different symbols
+All three cards have the same shadings or they all have different shadings
+All three cards have the same colors or they all have different colors
+
+Example of a set is:
+
+1 green striped diamond
+
+2 green solid diamond
+
+3 green open diamond
+
+Once the game has started, enter the number of players playing the game. As this point, 12 cards will be shown on the screen.
+
+If there is no set then more cards will be added.
+
+Whoever sees a set first enters the command to find set. The command will be explained detail as you read through.
+
+If those three cards are a set then that player gets a point. 
+
+The three cards are removed from the game and three new cards are added to bottom list of the displayed cards. If no set exists, then 3 more cards are added until a set is possible.
+
+Once all 81 cards have been exhausted and there are no more sets on the displayed cards, the game ends.
+
+The game then displays the winner (Player with most points)
+
+**How to Play**
+---------------------
+
+To start the game enter the command  in terminal.
+
+`ruby game.rb`
+
+Once the game has started, enter the number of players playing the game. 
+As this point, 12 cards will be shown on the screen. 
+
+If there is no set then more cards will be added. 
+
+Whoever sees a set first enters set "player name" card1number card2 number card3 number.
+
+
+
+** 7 commands you can do in this game**
+-----------------------------------------------------
+0. In order to see all avilable commands, you  need to type help
+
+`help`
+
+1. The set command will allow a player to pick a set--- set <player> <card_number1> <card_number2> <card_number3>
+for example
+
+`set John 1 2 3`
+
+2. The printcards command will print all the current cards on the board
+
+`printcards`
+
+3. The printplayers command will print all the current players scores in the game
+
+`printplayers`
+
+4. The findset command will provide a possible set of cards on the board
+
+`findset`
+
+5. The hint command will provide two cards of a possible set of cards on the board
+
+`hint`
+
+6. The prettyprint command will set pretty printing of cards on or off,if pretty print on means all of theses cards are displayed in color. pretty print off means these cards will display in words
+
+`prettyprint`
+   
+ Example colorful display expanation:
+    card index number: #n, where n is an integer that indicates the index of the card on the board
+    
+
+color: the color of the card description text
+   
+   
+    shadinge: 〓=stripped   ⬛ =solid   ⬜ =open
+    
+    
+    shape: ♥= heart ♦= diamond ♠=spade
+   
+   
+    number: shown in card will be displayed in that amount of repeating shapes ex:♠ is 1, ♠♠ is 2
+
+    example: #0 〓 ♥♥♥ (in red text) = card 0 is 3 red, stripped, hearts
+
+**Suprise**
+-----------------
+If  one of players' is name JOHNCENA, be sure to capitalize every character, there will be a big suprise waiting for you.
+
+**Thanks**
+---------------------------
+*Team AAAA: Jack Li. Raymond Zou, Summer Xue, Xiao Liang*
+
+
+
+
