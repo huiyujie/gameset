@@ -17,7 +17,7 @@
 
 
 
-** 7 commands you can do in this game**
+**7 commands you can do in this game**
 -----------------------------------------------------
 0. In order to see all avilable commands, you  need to type help
 
