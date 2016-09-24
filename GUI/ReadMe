@@ -1,0 +1,3 @@
+1.Run setgame.rb to start game. You may need to install some tools and libs.
+2.Use Glade to generate the code of user interface based on gtk+ libs.
+3.How to play: choose 3 cards and choose a player.
