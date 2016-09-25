@@ -92,7 +92,7 @@ class MyClass
   end
 
   def button__clicked(*args)
-    if @@ClickedButtons.length > 3
+    if @@ClickedButtons.length < 3
       file_name = args[0].image.file
       file_name.slice! @path
       file_name.slice! ".jpg"
