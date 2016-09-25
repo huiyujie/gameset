@@ -92,14 +92,15 @@ class MyClass
   end
 
   def button__clicked(*args)
-
-    file_name = args[0].image.file
-    file_name.slice! @path
-    file_name.slice! ".jpg"
-    args[0].sensitive = false
-    if !@@ClickedCards.include? file_name
-      @@ClickedCards.push(file_name)
-      @@ClickedButtons.push(args[0])
+    if @@ClickedButtons.length > 3
+      file_name = args[0].image.file
+      file_name.slice! @path
+      file_name.slice! ".jpg"
+      args[0].sensitive = false
+      if !@@ClickedCards.include? file_name
+        @@ClickedCards.push(file_name)
+        @@ClickedButtons.push(args[0])
+      end
     end
   end
 # when choose 3 cards check if they are a set or not
